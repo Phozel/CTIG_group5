@@ -3,33 +3,52 @@ using UnityEngine;
 public class NewMonoBehaviourScript : MonoBehaviour
 {
     public GameObject player;
-    public float movement_speed = 10;
-    
+    private Rigidbody2D body;
+    private BoxCollider2D collider;
+    public float movement_speed = 5;
+    public float jump_force = 10;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    private float startY;
+    bool isGrounded;
+    bool canJump;
+
+    private void Awake()
     {
-        
+        body = GetComponent<Rigidbody2D>();
+        collider = GetComponent<BoxCollider2D>();
+        startY = player.transform.position.y;
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKey(KeyCode.W))
-        {
-            player.transform.Translate(Vector3.up * movement_speed * Time.deltaTime);
+        
+        if (Input.GetKey(KeyCode.A))
+        {   
+            player.transform.Translate(Vector2.left * movement_speed * Time.deltaTime);
         }
-        else if(Input.GetKey(KeyCode.S))
+        if(Input.GetKey(KeyCode.D))
         {
-            player.transform.Translate(Vector3.down * movement_speed * Time.deltaTime);
+            player.transform.Translate(Vector2.right * movement_speed * Time.deltaTime);
         }
-        else if(Input.GetKey(KeyCode.A))
-        {
-            player.transform.Translate(Vector3.left * movement_speed * Time.deltaTime);
-        }
-        else if(Input.GetKey(KeyCode.D))
-        {
-            player.transform.Translate(Vector3.right * movement_speed * Time.deltaTime);
+        if ((Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.Space)) && canJump) 
+        {   
+            if (body.linearVelocityY <= 0)
+                body.AddForce(Vector2.up * jump_force, ForceMode2D.Impulse);
         }
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        isGrounded = true;
+        canJump = true;
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        isGrounded = false;
+        canJump = false;
+    }
+    
 }
