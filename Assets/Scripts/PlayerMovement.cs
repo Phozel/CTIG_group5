@@ -37,12 +37,32 @@ public class NewMonoBehaviourScript : MonoBehaviour
             if (body.linearVelocityY <= 0)
                 body.AddForce(Vector2.up * jump_force, ForceMode2D.Impulse);
         }
+
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Debug.Log("Collided");
+        if (collision.gameObject.tag.Equals("Teleporter"))
+        {
+            Debug.Log("Teleporter touched");
+            if (collision.gameObject.name == "LeftTeleport")
+            {
+                Debug.Log("Left touched");
+                player.transform.position = new Vector2(6f, player.transform.position.y);
+            }
+            else if (collision.gameObject.name == "RightTeleport")
+            {
+                Debug.Log("Right touched");
+                player.transform.position = new Vector2(-6f, player.transform.position.y);
+            }
+        }
+    }
     private void OnCollisionEnter2D(Collision2D collision)
     {
         isGrounded = true;
         canJump = true;
+        
     }
 
     private void OnCollisionExit2D(Collision2D collision)
