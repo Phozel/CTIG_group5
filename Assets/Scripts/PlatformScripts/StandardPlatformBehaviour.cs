@@ -35,54 +35,59 @@ public class StandardPlatform : MonoBehaviour
     {
         if (this.tag == "PlatformMoving")
         {
-            if (moveDisX > 0)
+            move();
+        }
+    }
+
+    private void move()
+    {
+        if (moveDisX > 0)
+        {
+
+            this.transform.Translate(Vector2.left * moveDirX * move_speed * Time.deltaTime);
+            if (this.transform.position.x <= end_posX && end_posX < 0 && moveDirX == 1)
             {
-
-                this.transform.Translate(Vector2.left * moveDirX * move_speed * Time.deltaTime);
-                if (this.transform.position.x <= end_posX && end_posX < 0 && moveDirX == 1)
-                {
-                    Debug.Log("1");
-                    prev_dirX = moveDirX;
-                    moveDirX *= -1;
-                }
-                else if (this.transform.position.x <= end_posX && end_posX >= 0 && moveDirX == 1)
-                {
-                    Debug.Log("2");
-                    prev_dirX = moveDirX;
-                    moveDirX *= -1;
-                }
-                else if (startX - this.transform.position.x <= 0 && moveDirX == -1)
-                {
-                    Debug.Log("3");
-                    prev_dirX = moveDirX;
-                    moveDirX *= -1;
-                }
-                
+                Debug.Log("1");
+                prev_dirX = moveDirX;
+                moveDirX *= -1;
             }
-            if (moveDisY > 0)
+            else if (this.transform.position.x <= end_posX && end_posX >= 0 && moveDirX == 1)
             {
-
-                this.transform.Translate(Vector2.up * moveDirY * move_speed * Time.deltaTime);
-                if (this.transform.position.y >= end_posY && end_posY < 0 && moveDirY == 1)
-                {
-                    Debug.Log("1");
-                    prev_dirY = moveDirY;
-                    moveDirY *= -1;
-                }
-                else if (this.transform.position.y >= end_posY && end_posY >= 0 && moveDirY == 1)
-                {
-                    Debug.Log("2.1");
-                    prev_dirY = moveDirY;
-                    moveDirY *= -1;
-                }
-                else if (this.transform.position.y - startY <= 0 && moveDirY == -1)
-                {
-                    Debug.Log("3");
-                    prev_dirY = moveDirY;
-                    moveDirY *= -1;
-                }
-
+                Debug.Log("2");
+                prev_dirX = moveDirX;
+                moveDirX *= -1;
             }
+            else if (startX - this.transform.position.x <= 0 && moveDirX == -1)
+            {
+                Debug.Log("3");
+                prev_dirX = moveDirX;
+                moveDirX *= -1;
+            }
+
+        }
+        if (moveDisY > 0)
+        {
+
+            this.transform.Translate(Vector2.up * moveDirY * move_speed * Time.deltaTime);
+            if (this.transform.position.y >= end_posY && end_posY < 0 && moveDirY == 1)
+            {
+                Debug.Log("1");
+                prev_dirY = moveDirY;
+                moveDirY *= -1;
+            }
+            else if (this.transform.position.y >= end_posY && end_posY >= 0 && moveDirY == 1)
+            {
+                Debug.Log("2.1");
+                prev_dirY = moveDirY;
+                moveDirY *= -1;
+            }
+            else if (this.transform.position.y - startY <= 0 && moveDirY == -1)
+            {
+                Debug.Log("3");
+                prev_dirY = moveDirY;
+                moveDirY *= -1;
+            }
+
         }
     }
 }

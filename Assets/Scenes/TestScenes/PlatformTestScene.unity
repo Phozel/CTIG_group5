@@ -378,7 +378,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   move_speed: 2
   moveDisX: 0
-  moveDisY: 2
+  moveDisY: 0
 --- !u!1001 &1371043848
 PrefabInstance:
   m_ObjectHideFlags: 0
