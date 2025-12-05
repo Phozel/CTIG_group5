@@ -16,7 +16,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
     {
         body = GetComponent<Rigidbody2D>();
         collider = GetComponent<BoxCollider2D>();
-        startY = player.transform.position.y;
+
 
     }
 
@@ -25,11 +25,15 @@ public class NewMonoBehaviourScript : MonoBehaviour
     {
         
         if (Input.GetKey(KeyCode.A))
-        {   
+        {
+            body.linearVelocityX = 0;
             player.transform.Translate(Vector2.left * movement_speed * Time.deltaTime);
         }
         if(Input.GetKey(KeyCode.D))
         {
+            if(!isGrounded && body.linearVelocityY != 0) { 
+                body.linearVelocityX = 0;
+            }
             player.transform.Translate(Vector2.right * movement_speed * Time.deltaTime);
         }
         if ((Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.Space)) && canJump) 
@@ -61,7 +65,10 @@ public class NewMonoBehaviourScript : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         isGrounded = true;
-        canJump = true;
+        if (body.totalForce.y == 0)
+        {
+            canJump = true;
+        }
         
     }
 
