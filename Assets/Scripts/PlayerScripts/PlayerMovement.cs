@@ -26,7 +26,10 @@ public class NewMonoBehaviourScript : MonoBehaviour
         
         if (Input.GetKey(KeyCode.A))
         {
-            body.linearVelocityX = 0;
+            if (!isGrounded && body.linearVelocityY != 0)
+            {
+                body.linearVelocityX = 0;
+            }
             player.transform.Translate(Vector2.left * movement_speed * Time.deltaTime);
         }
         if(Input.GetKey(KeyCode.D))

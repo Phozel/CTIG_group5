@@ -430,15 +430,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -2956788781363351791, guid: f16932b09ee76784bad1668254e2b089, type: 3}
       propertyPath: moveDisX
-      value: 0
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -2956788781363351791, guid: f16932b09ee76784bad1668254e2b089, type: 3}
+      propertyPath: move_speed
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6211984548782462707, guid: f16932b09ee76784bad1668254e2b089, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3
+      value: -0.87
       objectReference: {fileID: 0}
     - target: {fileID: 6211984548782462707, guid: f16932b09ee76784bad1668254e2b089, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.5
+      value: 1.11
       objectReference: {fileID: 0}
     - target: {fileID: 6211984548782462707, guid: f16932b09ee76784bad1668254e2b089, type: 3}
       propertyPath: m_LocalPosition.z
@@ -623,6 +627,10 @@ PrefabInstance:
       propertyPath: camera
       value: 
       objectReference: {fileID: 519420028}
+    - target: {fileID: 6226274776893782711, guid: 7cce532c6a63b2a46b472ed61d42853f, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6961876400383001324, guid: 7cce532c6a63b2a46b472ed61d42853f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
