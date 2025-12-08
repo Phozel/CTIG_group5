@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.Rendering;
 
 public class InLevelUI : MonoBehaviour
 {
@@ -14,6 +15,20 @@ public class InLevelUI : MonoBehaviour
     {
         UpdateHeight();
         UpdateTimer();
+    }
+
+    public void ResetUIElements()
+    {
+        timer = 0f;
+
+        if (textHeight != null)
+            textHeight.text = "Height: 0.0";
+
+        if (textTime != null)
+            textTime.text = "00:00.000";
+
+        if (imageItemOverlay != null)
+            imageItemOverlay.SetActive(false);
     }
 
     // ------------------------------

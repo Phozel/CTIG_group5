@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3940537334782633067}
   - component: {fileID: 3650433713609796668}
   m_Layer: 0
-  m_Name: InLevelUIController
+  m_Name: HUDController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
