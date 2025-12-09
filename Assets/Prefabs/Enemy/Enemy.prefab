@@ -84,6 +84,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00f73fd7b4dc94146b26a931bd90f625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rangeY: 1
+  rangeX: 1
+  speed: 2
 --- !u!114 &8615857409032401855
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -96,6 +99,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8dfc4b6cfb7924c60a0cf1ae84f70116, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Bullet: {fileID: 6151150410722439038, guid: 7118bb56f59b0478d953c076377cd556, type: 3}
+  bulletSpawnPoint: {fileID: 9059879425943434284}
+  shootCooldown: 1.5
+  detectRange: 5
 --- !u!212 &-3229305607286804536
 SpriteRenderer:
   m_ObjectHideFlags: 0

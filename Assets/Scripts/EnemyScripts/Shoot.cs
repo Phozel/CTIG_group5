@@ -21,15 +21,23 @@ public class Shoot : MonoBehaviour
 
         float dist = Vector2.Distance(transform.position, player.position);
 
-        if (dist <= detectionRange && timer >= shootCooldown)
+        if (dist <= detectRange && timer >= shootCooldown)
         {
-            Shoot();
+            ShootBullet();
             timer = 0f;
         }
     }
 
-    void Shoot()
+    void ShootBullet()
     {
-        Instantiate(Bullet, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
+        Vector2 direction = (player.position - bulletSpawnPoint.position).normalized;
+
+        GameObject bulletObj = Instantiate(Bullet, bulletSpawnPoint.position, Quaternion.identity);
+       
+        Bullet bullet = bulletObj.GetComponent<Bullet>();
+        bullet.Init(direction); 
+
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+bulletObj.transform.rotation = Quaternion.Euler(0f, 0f, angle - 90f);
     }
 }

@@ -1,9 +1,11 @@
+using Unity.Mathematics.Geometry;
 using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    public float moveSpeed = 1f;
-    public float range = 1f;
+    public float rangeY = 1f;
+    public float rangeX = 1f;
+
     public float speed = 2f;
 
     private Vector2 startPos;
@@ -17,7 +19,9 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float yOffset = Math.Sin(Time.time * speed) * range;
-        transform.position = new Vector2(transform.position.x - moveSpeed, startPos.y + yOffset);
+        float yOffset = Mathf.Sin(Time.time * speed) * rangeY;
+        float xOffset = Mathf.Sin(Time.time * speed) * rangeX;
+        transform.position = new Vector2(startPos.x + xOffset, startPos.y + yOffset);
+
     }
 }

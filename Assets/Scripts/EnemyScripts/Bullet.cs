@@ -5,12 +5,15 @@ public class Bullet : MonoBehaviour
     public float speed = 8f;
     public float lifetime = 3f;
 
-    private Vector2 direction;
+    private Vector2 direction = Vector2.zero;
 
-    void Start()
+    private Rigidbody2D rb;
+
+    void Awake()
     {
-        Destroy(gameObject, lifetime); // auto-destroy after some time
+        rb = GetComponent<Rigidbody2D>();
     }
+   
 
     public void SetDirection(Vector2 dir)
     {
@@ -19,9 +22,15 @@ public class Bullet : MonoBehaviour
 
     void Update()
     {
-        transform.Translate(direction * speed * Time.deltaTime);
+        transform.Translate(direction * speed * Time.deltaTime, Space.World);
     }
+    public void Init(Vector2 dir)
+    {
+        Vector2 direction = dir.normalized;
+        rb.linearVelocity = direction * speed;
 
+        Destroy(gameObject, lifetime);
+    }
     private void OnTriggerEnter2D(Collider2D other)
     {
         // If you later tag the player as "Player"
