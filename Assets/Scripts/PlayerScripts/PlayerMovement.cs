@@ -56,12 +56,12 @@ public class NewMonoBehaviourScript : MonoBehaviour
             if (collision.gameObject.name == "LeftTeleport")
             {
                 Debug.Log("Left touched");
-                player.transform.position = new Vector2(6f, player.transform.position.y);
+                player.transform.position = new Vector2(5.5f, player.transform.position.y);
             }
             else if (collision.gameObject.name == "RightTeleport")
             {
                 Debug.Log("Right touched");
-                player.transform.position = new Vector2(-6f, player.transform.position.y);
+                player.transform.position = new Vector2(-5.5f, player.transform.position.y);
             }
         }
     }
