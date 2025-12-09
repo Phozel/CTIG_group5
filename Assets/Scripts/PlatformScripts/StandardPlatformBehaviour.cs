@@ -27,6 +27,8 @@ public class StandardPlatform : MonoBehaviour
     public float moveDisX = 0;
     public float moveDisY = 0;
 
+    public float destroyTimer = 3.0f;
+
     private void Start()
     {
         startX = this.transform.position.x;
@@ -52,7 +54,10 @@ public class StandardPlatform : MonoBehaviour
          Destroy this object after 5s if it has the tag PlatformBreakable
          */
         if (this.tag == "PlatformBreakable") { 
-             Destroy(this.gameObject, 5.0f);
+            this.GetComponent<BreakAnimationPlatform>().StartShake();
+            this.GetComponent<BreakAnimationPlatform>().StartFade();
+
+             Destroy(this.gameObject, destroyTimer);
         }
     }
 
