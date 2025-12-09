@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6206920188636667328}
   - component: {fileID: 5504236177536605210}
   m_Layer: 0
-  m_Name: PowerUpSpringBoots
+  m_Name: ScarfPowerUp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27,7 +27,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.66, y: 65.97, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -76,8 +76,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7424056309648541759, guid: 8d452af12295a614ead107392d7727bc, type: 3}
-  m_Color: {r: 0.754717, g: 0.3745858, b: 0.3097188, a: 1}
+  m_Sprite: {fileID: 2174045244123681815, guid: f479767b4b8f04d0e80bf2d90c2c494d, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
