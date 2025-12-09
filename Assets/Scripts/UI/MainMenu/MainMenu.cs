@@ -39,6 +39,7 @@ public class MainMenuController : MonoBehaviour
     // Main menu buttons
     public void OpenLevelSelection()
     {
+        Debug.Log("Opening Level Selection");
         mainMenuPanel.SetActive(false);
         levelSelectionPanel.SetActive(true);
         settingsPanel.SetActive(false);
@@ -47,6 +48,7 @@ public class MainMenuController : MonoBehaviour
 
     public void OpenSettings()
     {
+        Debug.Log("Opening Settings");
         mainMenuPanel.SetActive(false);
         levelSelectionPanel.SetActive(false);
         settingsPanel.SetActive(true);
@@ -55,15 +57,11 @@ public class MainMenuController : MonoBehaviour
 
     public void BackToMainMenu()
     {
+        Debug.Log("Returning to Main Menu");
         mainMenuPanel.SetActive(true);
         levelSelectionPanel.SetActive(false);
         settingsPanel.SetActive(false);
         returnMainMenuButton.SetActive(false);
-    }
-
-    public void LoadLevel(string levelName)
-    {
-        SceneManager.LoadScene(levelName);
     }
 
     public void QuitGame()
