@@ -7,6 +7,8 @@ public class Bullet : MonoBehaviour
 
     private Vector2 direction = Vector2.zero;
 
+    private bool detectedPlayer = false;
+    public float delayForDestroy = 0.2f;
     private Rigidbody2D rb;
 
     void Awake()
@@ -33,13 +35,11 @@ public class Bullet : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        // If you later tag the player as "Player"
-        if (other.CompareTag("Player"))
-        {
-            // Apply damage here if your player has health script
-            // other.GetComponent<PlayerHealth>()?.TakeDamage(1);
 
-            Destroy(gameObject);
+        if (other.CompareTag("Player") && !detectedPlayer)
+        {
+            detectedPlayer = true;
+            StartCoroutine(DestroyAfterDelay());
         }
 
         // Add logic for hitting walls or environment
@@ -47,5 +47,11 @@ public class Bullet : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+
+    private System.Collections.IEnumerator DestroyAfterDelay()
+    {
+        yield return new WaitForSeconds(delayForDestroy);
+        Destroy(gameObject);
     }
 }
