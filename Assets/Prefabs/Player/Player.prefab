@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 8902090489610842680}
   - component: {fileID: 3742394868229564341}
   - component: {fileID: 97313631604550517}
+  - component: {fileID: 6452223421096813114}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -219,5 +220,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hasPowerUp: 0
-  powerUpDuration: 2.5
   jumpForceMultiplier: 2
+--- !u!114 &6452223421096813114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 742160134745178704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5916ac35cdbf14451beb887a0bea878c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hasPowerUp: 0
+  jumpForceMultiplier: 17

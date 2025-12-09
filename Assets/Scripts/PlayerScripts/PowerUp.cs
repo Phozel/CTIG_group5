@@ -4,11 +4,14 @@ public class PowerUp : MonoBehaviour
 {
 
     public bool hasPowerUp;
-    public float powerUpDuration = 25f;
     public float jumpForceMultiplier = 25f;
     private Rigidbody2D playerRb;
     private PlayerMovement playerMovement;
     private GameObject powerUp;
+    public GameObject powerUpEquippedText;
+    public GameObject powerUpNoneText;
+
+
 
     void Start()
     {
@@ -18,15 +21,16 @@ public class PowerUp : MonoBehaviour
 
     void Update()
     {
-        if (hasPowerUp)
+        OnGUI();
+        if (hasPowerUp && Input.GetKeyDown(KeyCode.P))
         {
             PowerUpJump();
         }
     }
     
-    private void OnCollisionEnter2D(Collision2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.collider.CompareTag("PowerUp"))
+        if (other.CompareTag("PowerUp"))
         {
             powerUp = other.gameObject;
             CollectPowerUp();
@@ -37,14 +41,10 @@ public class PowerUp : MonoBehaviour
 
     public void PowerUpJump()
     {
-        if (!hasPowerUp) 
-        {
-            return;
-        }
         if (playerRb != null)
         {
-          
-                playerRb.AddForce(Vector2.up * jumpForceMultiplier, ForceMode2D.Impulse);
+            playerRb.linearVelocity = new Vector2(playerRb.linearVelocity.x,jumpForceMultiplier);
+            
             hasPowerUp = false;
             return;
         }
@@ -55,12 +55,23 @@ public class PowerUp : MonoBehaviour
         {
             return;
         }
-
         hasPowerUp = true;
-        PowerUpJump();
         if(powerUp != null)
         {
             Destroy(powerUp.gameObject);        
+        }
+    }
+    private void OnGUI()
+    {
+        if (hasPowerUp)
+        {
+            powerUpEquippedText.SetActive(true);
+            powerUpNoneText.SetActive(false);
+        }
+        else
+        {
+            powerUpEquippedText.SetActive(false);
+            powerUpNoneText.SetActive(true);
         }
     }
 }
