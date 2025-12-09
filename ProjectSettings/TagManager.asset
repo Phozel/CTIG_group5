@@ -8,6 +8,7 @@ TagManager:
   - PlatformMoving
   - PlatformBreakable
   - RotatedPlatform
+  - PowerUp
   layers:
   - Default
   - TransparentFX
