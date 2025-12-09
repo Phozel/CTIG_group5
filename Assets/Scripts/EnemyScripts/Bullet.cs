@@ -8,7 +8,7 @@ public class Bullet : MonoBehaviour
     private Vector2 direction = Vector2.zero;
 
     private bool detectedPlayer = false;
-    public float delayForDestroy = 0.2f;
+    public float delayForDestroy = 0.07f;
     private Rigidbody2D rb;
 
     void Awake()
