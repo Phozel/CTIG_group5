@@ -43,6 +43,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
         {   
             if (body.linearVelocityY <= 0)
                 body.AddForce(Vector2.up * jump_force, ForceMode2D.Impulse);
+            AudioManager.Instance.Play("Jump");
         }
 
     }
