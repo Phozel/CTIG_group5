@@ -103,6 +103,11 @@ public class AudioManager : MonoBehaviour
         ApplyVolumes();
     }
 
+    public void SetMusicVolume(float value)
+    {
+        // Placeholder for music volume control
+    }
+
     public void mute()
     {
         muted = !muted;
@@ -116,5 +121,6 @@ public class AudioManager : MonoBehaviour
             sfxSource.volume = finalSFX;
         if (sfx3DSource)
             sfx3DSource.volume = finalSFX;
+        
     }
 }
