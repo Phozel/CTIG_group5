@@ -22,7 +22,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6961876400383001324
 Transform:
   m_ObjectHideFlags: 0
@@ -220,5 +220,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hasPowerUp: 0
   jumpForceMultiplier: 17
-  powerUpEquippedText: {fileID: 0}
-  powerUpNoneText: {fileID: 0}
