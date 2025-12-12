@@ -40,6 +40,7 @@ public class Bullet : MonoBehaviour
         {
             detectedPlayer = true;
             StartCoroutine(DestroyAfterDelay());
+            AudioManager.Instance.Play("PlayerHitByProjectile");
         }
 
         // Add logic for hitting walls or environment

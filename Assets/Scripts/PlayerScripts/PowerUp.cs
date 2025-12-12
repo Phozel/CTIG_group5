@@ -35,6 +35,7 @@ public class PowerUp : MonoBehaviour
         if (hasPowerUp && Input.GetKeyDown(KeyCode.P))
         {
             PowerUpJump();
+            AudioManager.Instance.Play("RocketUsed");
         }
     }
     
@@ -43,6 +44,7 @@ public class PowerUp : MonoBehaviour
         if (other.CompareTag("PowerUp"))
         {
             powerUp = other.gameObject;
+            AudioManager.Instance.Play("PowerupPickup");
             CollectPowerUp();
         }
     }

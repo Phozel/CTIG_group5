@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cc06be7208f7cb4792d961c752399dd, type: 3}
   m_Name: JumpingWithPowerup
   m_EditorClassIdentifier: 
-  soundName: 
+  soundName: JumpingWithPowerup
   clip: {fileID: 8300000, guid: 8a955fb4b6f648e488cf76a3d677e7ce, type: 3}
   volume: 0.1
   pitch: 1

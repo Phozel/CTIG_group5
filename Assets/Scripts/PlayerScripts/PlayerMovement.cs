@@ -66,6 +66,7 @@ public class PlayerMovement : MonoBehaviour
                 player.transform.position -= new Vector3(11f, 0, 0);
             }
         }
+        
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -73,8 +74,19 @@ public class PlayerMovement : MonoBehaviour
         if (body.totalForce.y == 0)
         {
             canJump = true;
+            
         }
-        
+        if (collision.gameObject.tag.Equals("Enemy"))
+        {
+            Debug.Log("Landed on enemy");
+            AudioManager.Instance.Play("EnemyLandedOn");
+        }
+        else
+        {
+            Debug.Log("Landed on ground");
+            AudioManager.Instance.Play("CharacterLanding");
+        }
+
     }
 
     private void OnCollisionExit2D(Collision2D collision)
