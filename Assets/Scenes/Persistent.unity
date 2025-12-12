@@ -1220,6 +1220,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6610953765824229951, guid: b8490bb108238f845b5806f4a93ddc87, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 350
+      objectReference: {fileID: 0}
+    - target: {fileID: 6737359238185354013, guid: b8490bb108238f845b5806f4a93ddc87, type: 3}
+      propertyPath: m_text
+      value: Come Hang with Us
+      objectReference: {fileID: 0}
     - target: {fileID: 6880059573228004160, guid: b8490bb108238f845b5806f4a93ddc87, type: 3}
       propertyPath: m_Value
       value: 0.1
@@ -1357,6 +1365,10 @@ PrefabInstance:
       propertyPath: 'musicTracks.Array.data[2]'
       value: 
       objectReference: {fileID: 8300000, guid: 03911f1c15c043e4b9cd31e0ddf18d61, type: 3}
+    - target: {fileID: 2754773083805705312, guid: ea29b9c01fd32cf41b9fa64896a94035, type: 3}
+      propertyPath: Loop
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2754773083805705312, guid: ea29b9c01fd32cf41b9fa64896a94035, type: 3}
       propertyPath: m_Volume
       value: 0.1
