@@ -47,7 +47,7 @@ public class LevelLoader : MonoBehaviour
     public void LoadLevel(int levelNumber)
     {
         StartCoroutine(LoadLevelRoutine(levelNumber));
-        
+        MusicManager.Instance.PlayMusic(levelNumber);
     }
 
     private IEnumerator LoadLevelRoutine(int levelNumber)
@@ -101,6 +101,7 @@ public class LevelLoader : MonoBehaviour
         {
             SceneManager.UnloadSceneAsync("Level_" + _currentLoadedLevel);
             _currentLoadedLevel = -1;
+            MusicManager.Instance.PlayMusic(0);
         }
 
         // reset uiLoader HUD elements
