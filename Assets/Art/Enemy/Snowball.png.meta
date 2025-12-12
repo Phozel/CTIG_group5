@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: dbef917ed0bb64c99bd3f65961adc388
+guid: 7aedb6388c00346708a3bcb1454c8301
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6029036037096021436
-    second: Hanger jump_0
-  - first:
-      213: 4348322800016596531
-    second: Hanger jump_1
+      213: -4475890609340141181
+    second: Snowball_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Hanger jump_0
+      name: Snowball_0
       rect:
         serializedVersion: 2
-        x: 39
-        y: 290
-        width: 946
-        height: 527
+        x: 0
+        y: 0
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,30 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 442ecdedaaf845ca0800000000000000
-      internalID: -6029036037096021436
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Hanger jump_1
-      rect:
-        serializedVersion: 2
-        x: 173
-        y: 183
-        width: 672
-        height: 153
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 33e98b75c88585c30800000000000000
-      internalID: 4348322800016596531
+      spriteID: 38136c0843172e1c0800000000000000
+      internalID: -4475890609340141181
       vertices: []
       indices: 
       edges: []
@@ -160,8 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Hanger jump_0: -6029036037096021436
-      Hanger jump_1: 4348322800016596531
+      Snowball_0: -4475890609340141181
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
