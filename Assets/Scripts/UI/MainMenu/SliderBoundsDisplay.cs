@@ -2,6 +2,9 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 
+/*
+ Co-created with ChatGPT
+ */
 public class SliderBoundsAndValueDisplay : MonoBehaviour
 {
     [Header("Slider and Texts")]
@@ -43,7 +46,7 @@ public class SliderBoundsAndValueDisplay : MonoBehaviour
 
     void OnSliderValueChanged(float value)
     {
-        AudioListener.volume = value;
+        AudioManager.Instance.masterVolume = value;
         UpdateCurrentValueText();
     }
 
@@ -51,7 +54,12 @@ public class SliderBoundsAndValueDisplay : MonoBehaviour
     {
         if (currentValueText == null || handleRect == null) return;
 
-        currentValueText.text = slider.value.ToString("0");
+        float temp_value = slider.value * 100;
+
+        if (temp_value == 0)
+            currentValueText.text = slider.value.ToString("0%");
+        else
+            currentValueText.text = slider.value.ToString("#%");
 
         Vector3 worldPos = handleRect.position + valueTextOffset;
         if (parentCanvas.renderMode != RenderMode.WorldSpace)

@@ -2,6 +2,9 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.Rendering;
 
+/*
+ Co-created with ChatGPT
+ */
 public class InLevelUI : MonoBehaviour
 {
     [Header("UI References")]

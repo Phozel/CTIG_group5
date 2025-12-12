@@ -1,6 +1,10 @@
 //Disclaimer: This code was mostly AI generated. We only modified it slightly to fit our needs.
 //Therefore, we do not claim intellectual property over this code.
 
+/*
+ Co-created with ChatGPT
+ */
+
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
