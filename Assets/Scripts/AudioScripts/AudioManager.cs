@@ -112,6 +112,7 @@ public class AudioManager : MonoBehaviour
    private void ApplyVolumes()
     {
         float finalSFX = masterVolume * sfxVolume;
+        MusicManager.Instance.SetMasterVolume(masterVolume);
         if (sfxSource)
             sfxSource.volume = finalSFX;
         if (sfx3DSource)

@@ -1351,23 +1351,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1408262633421639706, guid: ea29b9c01fd32cf41b9fa64896a94035, type: 3}
       propertyPath: musicTracks.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1408262633421639706, guid: ea29b9c01fd32cf41b9fa64896a94035, type: 3}
       propertyPath: 'musicTracks.Array.data[0]'
       value: 
-      objectReference: {fileID: 8300000, guid: 92ca228da29b58e429fe1c609b733018, type: 3}
+      objectReference: {fileID: 8300000, guid: 00eefd7f7a625d945b28f4061394eac3, type: 3}
     - target: {fileID: 1408262633421639706, guid: ea29b9c01fd32cf41b9fa64896a94035, type: 3}
       propertyPath: 'musicTracks.Array.data[1]'
       value: 
-      objectReference: {fileID: 8300000, guid: ea36c27459476864bbf904b83f108447, type: 3}
+      objectReference: {fileID: 8300000, guid: 23c5bcd6a15e52e43acf6d3d678e5267, type: 3}
     - target: {fileID: 1408262633421639706, guid: ea29b9c01fd32cf41b9fa64896a94035, type: 3}
       propertyPath: 'musicTracks.Array.data[2]'
       value: 
-      objectReference: {fileID: 8300000, guid: 03911f1c15c043e4b9cd31e0ddf18d61, type: 3}
+      objectReference: {fileID: 8300000, guid: 12c06137d9e82674da96b4f2e2e01f2a, type: 3}
+    - target: {fileID: 1408262633421639706, guid: ea29b9c01fd32cf41b9fa64896a94035, type: 3}
+      propertyPath: 'musicTracks.Array.data[3]'
+      value: 
+      objectReference: {fileID: 8300000, guid: f6d65d4567a22ce4890558b873afc113, type: 3}
     - target: {fileID: 2754773083805705312, guid: ea29b9c01fd32cf41b9fa64896a94035, type: 3}
       propertyPath: Loop
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2754773083805705312, guid: ea29b9c01fd32cf41b9fa64896a94035, type: 3}
       propertyPath: m_Volume
