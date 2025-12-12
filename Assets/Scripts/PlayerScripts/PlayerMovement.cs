@@ -39,11 +39,12 @@ public class PlayerMovement : MonoBehaviour
             }
             player.transform.Translate(Vector2.right * movement_speed * Time.deltaTime);
         }
-        if ((Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.Space)) && canJump) 
-        {   
-            if (body.linearVelocityY <= 0)
+        if ((Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.Space)) && canJump)
+        {
+            if (body.linearVelocityY <= 0) { 
                 body.AddForce(Vector2.up * jump_force, ForceMode2D.Impulse);
-            AudioManager.Instance.Play("Jump");
+                AudioManager.Instance.Play("Jump");
+            }
         }
 
     }
