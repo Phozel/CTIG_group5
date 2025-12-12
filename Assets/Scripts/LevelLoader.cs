@@ -130,7 +130,27 @@ public class LevelLoader : MonoBehaviour
 
     public void ReturnToMainMenuDelay(float delay)
     {
+        Invoke(nameof(Unfreeze), delay);
         Invoke(nameof(ReturnToMainMenu), delay);
+ 
+    }
 
+    private void Unfreeze()
+       {
+        GameObject player = GameObject.FindWithTag("Player");
+        if (player != null)
+        {
+            // Freeze Rigidbody
+            Rigidbody2D rb = player.GetComponent<Rigidbody2D>();
+            if (rb != null)
+            {
+                rb.linearVelocity = Vector2.zero;
+                rb.bodyType = RigidbodyType2D.Dynamic;
+            }
+
+            // Disable movement
+            PlayerMovement movement = player.GetComponent<PlayerMovement>();
+            movement.enabled = true;
+        }
     }
 }
