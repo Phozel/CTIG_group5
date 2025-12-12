@@ -34,13 +34,13 @@ public class MusicManager : MonoBehaviour
     }
 
 
-    /*private void Start()
+    private void Start()
     {
         if (musicTracks.Length > 0)
         {
             PlayMusic(currentTrackIndex);
         }
-    }*/
+    }
 
 
     public void PlayMusic(int index)

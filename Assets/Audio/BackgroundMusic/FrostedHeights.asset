@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5cc06be7208f7cb4792d961c752399dd, type: 3}
-  m_Name: EnemyLandedOn
+  m_Name: FrostedHeights
   m_EditorClassIdentifier: 
   soundName: 
-  clip: {fileID: 8300000, guid: 1d9316f43c17a1e4ba0ae5561aa4bc26, type: 3}
+  clip: {fileID: 8300000, guid: ea36c27459476864bbf904b83f108447, type: 3}
   volume: 0.1
   pitch: 1
   loop: 0

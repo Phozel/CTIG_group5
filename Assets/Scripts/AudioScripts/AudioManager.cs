@@ -103,11 +103,6 @@ public class AudioManager : MonoBehaviour
         ApplyVolumes();
     }
 
-    public void SetMusicVolume(float value)
-    {
-        // Placeholder for music volume control
-    }
-
     public void mute()
     {
         muted = !muted;
