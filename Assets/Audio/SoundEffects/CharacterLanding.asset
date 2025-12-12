@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: CharacterLanding
   m_EditorClassIdentifier: 
   soundName: 
-  clip: {fileID: 8300000, guid: 9825348a20ded0b478099c027e4480bd, type: 3}
+  clip: {fileID: 8300000, guid: 123c9522075144f2db9f9ad9022fab1f, type: 3}
   volume: 0.1
   pitch: 1
   loop: 0

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: EnemyShoot
   m_EditorClassIdentifier: 
   soundName: 
-  clip: {fileID: 8300000, guid: ebb3eebe7aafecd4ca707b1035ceef50, type: 3}
+  clip: {fileID: 8300000, guid: 8e0571b42ada5455fb846a7c123bd047, type: 3}
   volume: 0.1
   pitch: 1
   loop: 0

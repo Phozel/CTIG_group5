@@ -41,6 +41,8 @@ public class AudioManager : MonoBehaviour
     public void Play(string soundName)
     {
         if (!muted) { 
+            Debug.Log("Playing sound: " + soundName);
+            
             Sound s = FindSound(soundName);
             if (s == null) return;
 
@@ -48,7 +50,7 @@ public class AudioManager : MonoBehaviour
             sfxSource.volume = s.volume * masterVolume;
             sfxSource.loop = s.loop;
             sfxSource.spatialBlend = 0f;
-
+            Debug.Log("Volume: " + s.volume);
             if (s.loop)
                 sfxSource.clip = s.clip;
 
@@ -112,7 +114,6 @@ public class AudioManager : MonoBehaviour
    private void ApplyVolumes()
     {
         float finalSFX = masterVolume * sfxVolume;
-        MusicManager.Instance.SetMasterVolume(masterVolume);
         if (sfxSource)
             sfxSource.volume = finalSFX;
         if (sfx3DSource)
