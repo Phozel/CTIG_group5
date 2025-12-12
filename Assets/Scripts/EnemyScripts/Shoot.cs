@@ -38,6 +38,7 @@ public class Shoot : MonoBehaviour
         bullet.Init(direction); 
 
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-bulletObj.transform.rotation = Quaternion.Euler(0f, 0f, angle - 90f);
+        bulletObj.transform.rotation = Quaternion.Euler(0f, 0f, angle - 90f);
+        AudioManager.Instance.Play("EnemyShoot");
     }
 }

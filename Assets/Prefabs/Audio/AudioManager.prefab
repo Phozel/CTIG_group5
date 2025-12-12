@@ -51,6 +51,17 @@ MonoBehaviour:
   muted: 0
   sounds:
   - {fileID: 11400000, guid: fb033cd27d25cda49924f093fadb5782, type: 2}
+  - {fileID: 11400000, guid: d427db431e2d52d4f98244d692aa9606, type: 2}
+  - {fileID: 11400000, guid: 2a0c18d480adb684296a204d7b45c06b, type: 2}
+  - {fileID: 11400000, guid: 5e9a6d0fc41e4824dbec9ffe14dbc1ab, type: 2}
+  - {fileID: 11400000, guid: 20748c62290a1c347adac6e1526152cd, type: 2}
+  - {fileID: 11400000, guid: c75e8046b54af3540900980e3f0d022e, type: 2}
+  - {fileID: 11400000, guid: aade601e716d68146b0c1b655a701ae6, type: 2}
+  - {fileID: 11400000, guid: 10f07b6ce24a56e4385d88425b1bb4e9, type: 2}
+  - {fileID: 11400000, guid: 26ac576193a40fb45ae5a4182bc85e01, type: 2}
+  - {fileID: 11400000, guid: fbda3fcd4129fc44dab8dec67013f70a, type: 2}
+  - {fileID: 11400000, guid: 75443e2fcb3ad8f4d857abe46cd05231, type: 2}
+  - {fileID: 11400000, guid: df152f7ec9802a4438c14e6abf6a9f92, type: 2}
   sfxSource: {fileID: 406646340288902125}
   sfx3DSource: {fileID: 346708431074470679}
 --- !u!1 &8333398333621968655

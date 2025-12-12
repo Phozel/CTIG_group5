@@ -25,6 +25,7 @@ public class AudioManager : MonoBehaviour
 
     private void Awake()
     {
+
         if (Instance == null)
         {
             Instance = this;
@@ -35,6 +36,8 @@ public class AudioManager : MonoBehaviour
             Destroy(gameObject);
             return;
         }
+
+
     }
 
     // Play 2D sound by name
@@ -86,6 +89,7 @@ public class AudioManager : MonoBehaviour
     {
         foreach (var s in sounds)
         {
+            Debug.Log("Checking sound: " + s.soundName);
             if (s.soundName == name)
                 return s;
         }

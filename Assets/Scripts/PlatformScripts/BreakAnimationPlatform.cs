@@ -42,6 +42,7 @@ public class BreakAnimationPlatform : MonoBehaviour
 
  public void StartFade()
     {
+        AudioManager.Instance.Play("PlatformBreaking");
         StartCoroutine(FadeOut());
     }
 

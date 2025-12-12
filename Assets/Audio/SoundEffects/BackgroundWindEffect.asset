@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cc06be7208f7cb4792d961c752399dd, type: 3}
   m_Name: BackgroundWindEffect
   m_EditorClassIdentifier: 
-  soundName: 
+  soundName: BackgroundWIndEffect
   clip: {fileID: 8300000, guid: 72f7e5472583f5d4c8dbb729347865ac, type: 3}
   volume: 1
   pitch: 1

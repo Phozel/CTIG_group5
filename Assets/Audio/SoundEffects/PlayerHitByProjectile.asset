@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cc06be7208f7cb4792d961c752399dd, type: 3}
   m_Name: PlayerHitByProjectile
   m_EditorClassIdentifier: 
-  soundName: 
+  soundName: PlayerHitByProjectile
   clip: {fileID: 8300000, guid: eb1bdd148def0684aad01e5d638a9a45, type: 3}
   volume: 0.1
   pitch: 1

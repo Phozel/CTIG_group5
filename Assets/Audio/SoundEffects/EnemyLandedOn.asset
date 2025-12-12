@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cc06be7208f7cb4792d961c752399dd, type: 3}
   m_Name: EnemyLandedOn
   m_EditorClassIdentifier: 
-  soundName: 
+  soundName: EnemyLandedOn
   clip: {fileID: 8300000, guid: 1d9316f43c17a1e4ba0ae5561aa4bc26, type: 3}
   volume: 0.1
   pitch: 1

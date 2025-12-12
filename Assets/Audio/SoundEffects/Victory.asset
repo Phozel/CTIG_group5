@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cc06be7208f7cb4792d961c752399dd, type: 3}
   m_Name: Victory
   m_EditorClassIdentifier: 
-  soundName: 
+  soundName: Victory
   clip: {fileID: 8300000, guid: 195a3470d5fa70b4cb3c5d98f6edf2bc, type: 3}
   volume: 0.1
   pitch: 1
