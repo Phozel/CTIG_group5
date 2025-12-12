@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: a10f81e3cb07a4dd2ba262ea046865c0
+guid: 85a9141d361e148e2b5911d3ce0ac03f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7896879507418422366
-    second: Player1_0
+      213: -3900582269341384456
+    second: Hanger_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -48,10 +48,10 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 256
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -100,23 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Player1_0
+      name: Hanger_0
       rect:
         serializedVersion: 2
-        x: 23
-        y: 32
-        width: 999
-        height: 851
+        x: 0
+        y: 216
+        width: 1024
+        height: 590
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e5c9cb1921a579d60800000000000000
-      internalID: 7896879507418422366
+      spriteID: 8f048ba97195ed9c0800000000000000
+      internalID: -3900582269341384456
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 3db168994e07246daaace9c05d212bd5
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Player1_0: 7896879507418422366
+      Hanger_0: -3900582269341384456
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
