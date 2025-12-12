@@ -3784,6 +3784,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player_dep
       objectReference: {fileID: 0}
+    - target: {fileID: 742160134745178704, guid: 7cce532c6a63b2a46b472ed61d42853f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6452223421096813114, guid: 7cce532c6a63b2a46b472ed61d42853f, type: 3}
       propertyPath: powerUpNoneText
       value: 
