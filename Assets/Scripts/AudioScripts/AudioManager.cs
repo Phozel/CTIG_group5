@@ -42,9 +42,10 @@ public class AudioManager : MonoBehaviour
     // Play 2D sound by name
     public void Play(string soundName)
     {
-        if (!muted) { 
+        if (!muted)
+        {
             Debug.Log("Playing sound: " + soundName);
-            
+
             Sound s = FindSound(soundName);
             if (s == null) return;
 
@@ -66,7 +67,8 @@ public class AudioManager : MonoBehaviour
     // Play 3D sound at position
     public void PlayAtPosition(string soundName, Vector3 pos)
     {
-        if (!muted) { 
+        if (!muted)
+        {
             Sound s = FindSound(soundName);
             if (s == null) return;
 
@@ -80,8 +82,8 @@ public class AudioManager : MonoBehaviour
         Sound s = FindSound(soundName);
         if (s == null) return;
 
-        if (sfxSource.clip == s.clip)
-            sfxSource.Stop();
+        // if (sfxSource.clip == s.clip)
+        sfxSource.Stop();
     }
 
     private Sound FindSound(string name)
@@ -114,13 +116,13 @@ public class AudioManager : MonoBehaviour
 
     }
 
-   private void ApplyVolumes()
+    private void ApplyVolumes()
     {
         float finalSFX = masterVolume * sfxVolume;
         if (sfxSource)
             sfxSource.volume = finalSFX;
         if (sfx3DSource)
             sfx3DSource.volume = finalSFX;
-        
+
     }
 }

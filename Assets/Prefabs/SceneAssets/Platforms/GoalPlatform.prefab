@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 338492967564265591}
   - component: {fileID: 7762594732565869409}
   - component: {fileID: 1280962084035852037}
+  - component: {fileID: 5213469857729341844}
   m_Layer: 0
   m_Name: GoalPlatform
   m_TagString: Untagged
@@ -50,6 +51,7 @@ MonoBehaviour:
   move_speed: 1
   moveDisX: 0
   moveDisY: 0
+  destroyTimer: 3
 --- !u!212 &338492967564265591
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -170,3 +172,15 @@ PlatformEffector2D:
   m_UseSideFriction: 0
   m_UseSideBounce: 0
   m_SideArc: 1
+--- !u!114 &5213469857729341844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2526412524793371193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c15b29cfc44e343709be3f4a9bd76e46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
