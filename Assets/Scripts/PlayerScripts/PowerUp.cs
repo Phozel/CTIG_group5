@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Linq;
 
 public class PowerUp : MonoBehaviour
 {
@@ -8,9 +9,18 @@ public class PowerUp : MonoBehaviour
     private Rigidbody2D playerRb;
     private PlayerMovement playerMovement;
     private GameObject powerUp;
-    public GameObject powerUpEquippedText;
-    public GameObject powerUpNoneText;
 
+    private GameObject ItemFrame;
+    private GameObject ItemRocket;
+
+
+    void Awake()
+    {
+        ItemFrame = Resources.FindObjectsOfTypeAll<GameObject>()
+                          .FirstOrDefault(go => go.name == "ImageItemFrame");
+        ItemRocket = Resources.FindObjectsOfTypeAll<GameObject>()
+                          .FirstOrDefault(go => go.name == "ImageItemOverlay");
+    }
 
 
     void Start()
@@ -65,13 +75,11 @@ public class PowerUp : MonoBehaviour
     {
         if (hasPowerUp)
         {
-            powerUpEquippedText.SetActive(true);
-            powerUpNoneText.SetActive(false);
+            ItemRocket.SetActive(true);
         }
         else
         {
-            powerUpEquippedText.SetActive(false);
-            powerUpNoneText.SetActive(true);
+            ItemRocket.SetActive(false);
         }
     }
 }

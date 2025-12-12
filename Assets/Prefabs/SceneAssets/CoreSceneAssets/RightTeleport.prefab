@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2837063571173076532}
   - component: {fileID: 2150055061543685570}
   - component: {fileID: 873953715605230989}
+  - component: {fileID: 6107927335398791963}
   m_Layer: 8
   m_Name: RightTeleport
   m_TagString: Teleporter
@@ -147,3 +148,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4ef608eef0f84c428a0e5e47c62d2f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &6107927335398791963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8343154812109410422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ee9b240d9234c749bf7d6aa51a90e54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  followTransform: {fileID: 0}
