@@ -24,6 +24,7 @@ public class Shoot : MonoBehaviour
         if (dist <= detectRange && timer >= shootCooldown)
         {
             ShootBullet();
+            AudioManager.Instance.Play("EnemyShoot");
             timer = 0f;
         }
     }
