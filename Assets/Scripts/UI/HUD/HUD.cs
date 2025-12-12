@@ -25,7 +25,7 @@ public class InLevelUI : MonoBehaviour
         timer = 0f;
 
         if (textHeight != null)
-            textHeight.text = "Height: 0.0";
+            textHeight.text = "Height: 0";
 
         if (textTime != null)
             textTime.text = "00:00.000";
@@ -42,7 +42,7 @@ public class InLevelUI : MonoBehaviour
         // Replace with your actual player Y reference if needed
         float playerHeight = GameObject.FindWithTag("Player").transform.position.y;
 
-        textHeight.text = $"Height: {playerHeight:F1}";
+        textHeight.text = $"Height: {playerHeight:F0}";
     }
 
     // ------------------------------
