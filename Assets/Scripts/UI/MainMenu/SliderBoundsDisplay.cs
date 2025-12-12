@@ -2,6 +2,9 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 
+/*
+ Co-created with ChatGPT
+ */
 public class SliderBoundsAndValueDisplay : MonoBehaviour
 {
     [Header("Slider and Texts")]

@@ -16,4 +16,4 @@
 // AudioManager.Instance.PlayAtPosition("Explosion", transform.position);
 //
 
-All scripts for the audio were generated using ChatGPT
+All scripts for the audio were co-created by ChatGPT and then modified by me to fit the project's needs.

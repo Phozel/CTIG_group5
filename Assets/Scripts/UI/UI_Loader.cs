@@ -2,6 +2,9 @@ using System;
 using UnityEngine;
 using System.Linq;
 
+/*
+ Co-created with ChatGPT
+ */
 public class UI_Loader : MonoBehaviour
 {
     private GameObject _UI_mainMenu;

@@ -3,7 +3,7 @@
 // File: AudioEventTrigger.cs
 // Optional helper script for easily triggering sounds from events.
 //
-// Generated using ChatGPT
+// Co-created using ChatGPT
 // -----------------------------
 using UnityEngine;
 

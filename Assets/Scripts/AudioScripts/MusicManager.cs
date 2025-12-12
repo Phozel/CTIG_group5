@@ -1,7 +1,7 @@
 ﻿// -----------------------------
 // File: MusicManager.cs
 //
-// Generated using ChatGPT
+// Co-created with ChatGPT
 // -----------------------------
 using UnityEngine;
 

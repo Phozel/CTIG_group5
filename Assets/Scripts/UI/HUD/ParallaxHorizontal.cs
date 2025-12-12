@@ -1,5 +1,8 @@
 using UnityEngine;
 
+/*
+ Co-created with ChatGPT
+ */
 public class ParallaxHorizontalOnly : MonoBehaviour
 {
     [Range(0f, 1f)]

@@ -1,7 +1,7 @@
 // -----------------------------
 // File: AudioManager.cs
 //
-// Generated using ChatGPT
+// Co-created using ChatGPT
 // -----------------------------
 using Unity.VisualScripting;
 using UnityEditor.Experimental.GraphView;
