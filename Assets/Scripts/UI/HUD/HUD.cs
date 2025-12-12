@@ -23,6 +23,7 @@ public class InLevelUI : MonoBehaviour
     public void ResetUIElements()
     {
         timer = 0f;
+        enabled = true; // Unfreeze timer on reset
 
         if (textHeight != null)
             textHeight.text = "Height: 0.0";
