@@ -1,12 +1,14 @@
 using System.Dynamic;
 using UnityEngine;
 using System.Linq;
+using System.Diagnostics;
+using System.Collections.Generic;
 
 public class GoalScript : MonoBehaviour
 {
     [Header("Settings")]
-    [SerializeField] private float clappingSoundTime = 5f;
-    [SerializeField] private float totalCountdown = 7f; // 5s clapping + 2s wait
+    [SerializeField] private float clappingSoundTime = 5.0f;
+    [SerializeField] private float totalCountdown = 7.0f; // 5s clapping + 2s wait
 
     private LevelLoader _loader;
 
@@ -21,11 +23,11 @@ public class GoalScript : MonoBehaviour
 
         if (_loader != null)
         {
-            Debug.Log("Get to main menu");
+            UnityEngine.Debug.Log("Get to main menu");
         }
         else
         {
-            Debug.LogError("LevelLoader not found in scene!");
+            UnityEngine.Debug.LogError("LevelLoader not found in scene!");
         }
 
     }
@@ -56,16 +58,15 @@ public class GoalScript : MonoBehaviour
         AudioManager.Instance.Play("Victory");
 
         // Stop clapping after 5 seconds
+        UnityEngine.Debug.Log("Scheduling stop of clapping sound in " + clappingSoundTime + " seconds.");
         Invoke(nameof(StopClappingSound), clappingSoundTime);
 
-        // Go to main menu after total countdown (7s)
-        Invoke(nameof(_loader.ReturnToMainMenu), totalCountdown);
-
-        _loader.ReturnToMainMenu();
+        _loader.ReturnToMainMenuDelay(totalCountdown);
     }
 
     private void StopClappingSound()
     {
+        UnityEngine.Debug.Log("Stopping clapping sound");
         AudioManager.Instance.Stop("Victory");
     }
 
