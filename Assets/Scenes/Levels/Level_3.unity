@@ -808,7 +808,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!81 &519420029
 AudioListener:
   m_ObjectHideFlags: 0
@@ -1093,7 +1093,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &619394801
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2984,11 +2984,19 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1732136680}
     m_Modifications:
+<<<<<<< HEAD
     - target: {fileID: 8902600783191717201, guid: 0a531c9f104f24b6799815287fcb1d2b, type: 3}
       propertyPath: m_Name
       value: BreakablePlatform 2 (4)
       objectReference: {fileID: 0}
     - target: {fileID: 6211984548782462707, guid: 0a531c9f104f24b6799815287fcb1d2b, type: 3}
+=======
+    - target: {fileID: 7405108052207818389, guid: ba8cbcd6b70b44586b47f75b9ebb488c, type: 3}
+      propertyPath: m_Name
+      value: BrittlePlatform (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8539213493033509469, guid: ba8cbcd6b70b44586b47f75b9ebb488c, type: 3}
+>>>>>>> 4bc739b (Fixed the entry points (main menu to levels))
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
@@ -3180,6 +3188,10 @@ PrefabInstance:
     - target: {fileID: 3582390405044111230, guid: 5ff4c240c18278c41a6518a7f114dc71, type: 3}
       propertyPath: m_Name
       value: LeftTeleport
+      objectReference: {fileID: 0}
+    - target: {fileID: 3582390405044111230, guid: 5ff4c240c18278c41a6518a7f114dc71, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6259110963769273872, guid: 5ff4c240c18278c41a6518a7f114dc71, type: 3}
       propertyPath: m_Enabled
@@ -4049,6 +4061,10 @@ PrefabInstance:
     - target: {fileID: 8343154812109410422, guid: 05184048c89a53c449ce9a3410d575f6, type: 3}
       propertyPath: m_Name
       value: RightTeleport
+      objectReference: {fileID: 0}
+    - target: {fileID: 8343154812109410422, guid: 05184048c89a53c449ce9a3410d575f6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8883144695280708380, guid: 05184048c89a53c449ce9a3410d575f6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5332,6 +5348,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ground
       objectReference: {fileID: 0}
+    - target: {fileID: 6106767739150221061, guid: 4acb2084857f087428e9b594dc1adf1f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5534,7 +5554,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 742160134745178704, guid: 7cce532c6a63b2a46b472ed61d42853f, type: 3}
       propertyPath: m_Name
-      value: Player
+      value: Player_dep
+      objectReference: {fileID: 0}
+    - target: {fileID: 742160134745178704, guid: 7cce532c6a63b2a46b472ed61d42853f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4059774884453224743, guid: 7cce532c6a63b2a46b472ed61d42853f, type: 3}
       propertyPath: camera

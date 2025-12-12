@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Linq;
 
 /*
  Co-created with ChatGPT
@@ -8,10 +9,16 @@ public class ParallaxHorizontalOnly : MonoBehaviour
     [Range(0f, 0.3f)]
     // Lower = farther away, higher = closer
     public float parallaxFactor = 0.2f;
-    public Transform player;
-
+    private Transform player;
     private float startX; // initial background position
     private float playerStartX; // initial player position
+
+
+    void Awake()
+    {
+        player = Resources.FindObjectsOfTypeAll<GameObject>()
+                          .FirstOrDefault(go => go.name == "Player").transform;
+    }
 
     void Start()
     {
